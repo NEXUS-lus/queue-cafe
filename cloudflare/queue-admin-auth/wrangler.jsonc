@@ -19,6 +19,6 @@
     }
   ],
   "vars": {
-    "ALLOWED_ORIGIN": "https://REPLACE-WITH-GITHUB-PAGES-ORIGIN"
+    "ALLOWED_ORIGIN": "https://nexus-lus.github.io"
   }
 }
