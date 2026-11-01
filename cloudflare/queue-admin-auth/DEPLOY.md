@@ -20,3 +20,5 @@ The Worker stores only a salted password hash, short-lived bearer sessions, and 
 7. After password setup succeeds, remove the `BOOTSTRAP_KEY` secret from the Worker settings. The one-time setup endpoint will remain closed because the password is now initialized.
 
 The Worker accepts requests only from `ALLOWED_ORIGIN`; changing the site's origin requires updating this setting and redeploying. Do not put either password or bootstrap key in the GitHub repository.
+
+Password hashes use PBKDF2-HMAC-SHA-256 with 100,000 iterations, the maximum supported by Cloudflare Workers Web Crypto.
