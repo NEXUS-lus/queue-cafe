@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "queue-admin-auth",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "AUTH_STATE",
+        "class_name": "AuthState"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["AuthState"]
+    }
+  ],
+  "vars": {
+    "ALLOWED_ORIGIN": "https://REPLACE-WITH-GITHUB-PAGES-ORIGIN"
+  }
+}
