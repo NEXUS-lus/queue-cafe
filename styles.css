@@ -206,6 +206,9 @@ h1 em, h2 em { color: var(--olive); font-weight: 400; }
 .menu-list-card { padding: 24px clamp(19px, 3vw, 34px); border: 1px solid rgba(112,104,84,.24); background: rgba(246,242,233,.69); }
 .menu-size-heading { display: grid; grid-template-columns: 1fr 62px 62px; gap: 7px; padding-bottom: 8px; color: #8a877a; font-size: 8px; text-align: right; }
 .menu-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid rgba(86,82,68,.12); color: #4c4e44; font-size: 10px; line-height: 1.55; }
+.menu-item.menu-size-item { grid-template-columns: minmax(0, 1fr) 62px 62px; gap: 7px; }
+.menu-size-prices { display: grid; grid-column: 2 / 4; grid-template-columns: repeat(2, 62px); gap: 7px; }
+.menu-size-price { text-align: right; }
 .menu-item:last-child { border-bottom: 0; }
 .menu-item small { color: #858174; font-size: 8px; }
 .menu-price { color: #777158; font-size: 10px; font-weight: 700; white-space: nowrap; }

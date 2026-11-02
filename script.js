@@ -243,6 +243,19 @@
     const edits = readStorage(editsKey, {});
 
     const setElementText = (element, value) => {
+        const sizePrices = [...element.querySelectorAll(":scope > .menu-size-price")];
+        if (sizePrices.length === 2) {
+            const values = value.split(/\s*\/\s*/);
+            if (values.length === 2) {
+                sizePrices.forEach((price, index) => {
+                    price.textContent = values[index];
+                });
+            } else {
+                const availablePrices = sizePrices.filter((price) => price.textContent.trim() !== "—");
+                (availablePrices.length === 1 ? availablePrices : [sizePrices[0]])[0].textContent = value;
+            }
+            return;
+        }
         const emphasized = element.querySelector(":scope > em, :scope > strong");
         const lineBreak = element.querySelector(":scope > br");
         const button = element.querySelector(":scope > .admin-edit-trigger");
@@ -276,6 +289,10 @@
     };
 
     const getElementText = (element) => {
+        const sizePrices = [...element.querySelectorAll(":scope > .menu-size-price")];
+        if (sizePrices.length === 2) {
+            return sizePrices.map((price) => price.textContent.trim()).join(" / ");
+        }
         const clone = element.cloneNode(true);
         clone.querySelectorAll(".admin-edit-trigger, .wordmark-dot, .eyebrow-line, [aria-hidden='true']").forEach((node) => node.remove());
         clone.querySelectorAll("br").forEach((node) => node.replaceWith("\n"));
@@ -323,7 +340,7 @@
         ".menu-subheading",
         ".menu-intro",
         ".menu-hero-row > p",
-        ".menu-size-heading > span:not(:empty)",
+        ".menu-size-heading:not(.menu-size-heading-secondary) > span:not(:empty)",
         ".menu-visit-details > p",
         ".menu-visit-details > a:not(.button-link)",
         ".footer-contact > span",
