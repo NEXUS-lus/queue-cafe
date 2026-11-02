@@ -455,7 +455,7 @@
             <p class="admin-dialog-status" role="status" aria-live="polite"></p>
             <div class="admin-dialog-actions">
                 <button class="admin-dialog-reset" type="button">Сбросить элемент</button>
-                <button class="button-link" type="submit">Сохранить <span aria-hidden="true">↗</span></button>
+                <button class="button-link" type="submit">Сохранить <span class="arrow-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2.5 9.5 9.25 2.75M3.5 2.75h5.75V8.5"/></svg></span></button>
             </div>
         </form>`;
     document.body.append(dialog);
