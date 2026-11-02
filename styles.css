@@ -523,6 +523,7 @@ h1 em, h2 em { color: var(--olive); font-weight: 400; }
 .admin-auth-form > .eyebrow { margin: 0 0 13px; font-size: 8px; }
 .admin-auth-title { margin: 0 0 15px; font-family: var(--serif); font-size: 36px; font-weight: 500; line-height: 1; }
 .admin-auth-description { margin: 0 0 14px; color: #77766a; font-size: 10px; line-height: 1.7; }
+.admin-auth-dialog [hidden] { display: none !important; }
 .admin-auth-label { display: block; margin: 13px 0 6px; color: #65665b; font-size: 9px; font-weight: 700; letter-spacing: .05em; }
 .admin-auth-input { width: 100%; min-height: 42px; padding: 10px 12px; border: 1px solid rgba(112,104,84,.28); outline: none; background: rgba(255,255,255,.55); color: var(--ink); font-family: var(--sans); font-size: 12px; }
 .admin-auth-input:focus { border-color: #85896e; background: rgba(255,255,255,.8); }
