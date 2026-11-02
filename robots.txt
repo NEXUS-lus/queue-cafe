@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /*?admin=1
+
+Sitemap: https://nexus-lus.github.io/queue-cafe/sitemap.xml
