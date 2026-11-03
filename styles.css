@@ -224,9 +224,6 @@ h1 em, h2 em { color: var(--olive); font-weight: 400; }
 .menu-panini-photo img { height: 360px; object-position: center; }
 .menu-signature-photo img { height: 410px; object-position: center 52%; }
 .menu-photo figcaption { position: absolute; right: 0; bottom: 0; left: 0; padding: 31px 17px 14px; background: linear-gradient(transparent, rgba(37,34,27,.64)); color: #fffaf0; font-family: var(--serif); font-size: 18px; line-height: 1.1; }
-.menu-photo-source { margin: -7px 0 0; color: #858174; font-size: 9px; text-align: right; }
-.menu-photo-source a { color: #777158; text-decoration: underline; text-underline-offset: 2px; }
-.menu-photo-source a:hover { color: #a77c51; }
 .original-menu { border-bottom: 1px solid var(--line); color: #77766a; font-size: 9px; }
 .original-menu summary { padding: 10px 0; cursor: pointer; list-style: none; }
 .original-menu summary::-webkit-details-marker { display: none; }
