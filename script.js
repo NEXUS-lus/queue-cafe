@@ -363,7 +363,8 @@
         selectors.forEach((selector) => {
             document.querySelectorAll(selector).forEach((element) => {
                 if (element.closest(".admin-edit-toolbar, .admin-edit-dialog")) return;
-                const key = `${pageName}:${type}:${index++}`;
+                const key = element.dataset.editKey || `${pageName}:${type}:${index}`;
+                if (!element.dataset.editKey) index += 1;
                 const saved = edits[key];
                 element.dataset.editKey = key;
                 if (saved) applyElementEdit(element, saved);

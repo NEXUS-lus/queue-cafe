@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#e9e4d8">
-    <meta name="description" content="Меню кофейни Qúeue в Анапе: кофе и напитки, десерты, круассаны, панини и хот-доги.">
+    <meta name="description" content="Меню кофейни Qúeue в Анапе: классические и фирменные напитки, десерты, выпечка, панини и хот-доги.">
     <link rel="canonical" href="https://nexus-lus.github.io/queue-cafe/menu.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
     <meta property="og:site_name" content="Qúeue">
     <meta property="og:title" content="Меню Qúeue — кофейня в Анапе">
-    <meta property="og:description" content="Кофе, напитки, десерты, круассаны и горячие панини.">
+    <meta property="og:description" content="Классические и фирменные напитки, десерты, выпечка и горячие панини.">
     <meta property="og:url" content="https://nexus-lus.github.io/queue-cafe/menu.html">
     <meta property="og:image" content="https://nexus-lus.github.io/queue-cafe/assets/menu-classics.jpg">
     <title>Меню — Qúeue, Анапа</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=classic-sizes">
+    <link rel="stylesheet" href="styles.css?v=signature-menu">
     <script src="auth-config.js"></script>
     <script src="script.js" defer></script>
 </head>
@@ -41,8 +41,9 @@
             </div>
             <nav class="menu-jump" aria-label="Разделы меню">
                 <a href="#classic">01 <span>Классика</span> ↓</a>
-                <a href="#desserts">02 <span>Десерты</span> ↓</a>
-                <a href="#panini">03 <span>Панини</span> ↓</a>
+                <a href="#signature" data-edit-key="menu:text:firmennye-jump">02 <span>Фирменное</span> ↓</a>
+                <a href="#desserts">03 <span>Десерты</span> ↓</a>
+                <a href="#panini">04 <span>Панини</span> ↓</a>
             </nav>
         </section>
 
@@ -95,9 +96,126 @@
             </div>
         </section>
 
-        <section class="menu-category section-wrap" id="desserts">
+        <section class="menu-category section-wrap" id="signature">
             <div class="menu-category-heading">
                 <span class="category-number">02</span>
+                <div>
+                    <p class="eyebrow" data-edit-key="menu:text:firmennye-eyebrow"><span class="eyebrow-line"></span> АВТОРСКИЕ НАПИТКИ</p>
+                    <h2 data-edit-key="menu:text:firmennye-title">Фирменное <em>Qúeue.</em></h2>
+                </div>
+            </div>
+            <div class="menu-category-grid">
+                <div class="menu-list-card">
+                    <div class="menu-subheading menu-subheading-first" data-edit-key="menu:text:firmennye-hot-heading">Горячие напитки</div>
+                    <div class="menu-size-heading">
+                        <span></span>
+                        <span data-edit-key="menu:text:firmennye-hot-250">250 мл</span>
+                        <span data-edit-key="menu:text:firmennye-hot-350">350 мл</span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-latte-name">Латте фисташка — белый шоколад</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-latte-price"><span class="menu-size-price">430 ₽</span><span class="menu-size-price">—</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-almond-raf-name">Раф миндальный урбеч</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-almond-raf-price"><span class="menu-size-price">430 ₽</span><span class="menu-size-price">—</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-raspberry-raf-name">Раф сырно-малиновый</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-raspberry-raf-price"><span class="menu-size-price">410 ₽</span><span class="menu-size-price">—</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-belgian-cocoa-name">Какао бельгийский шоколад</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-belgian-cocoa-price"><span class="menu-size-price">380 ₽</span><span class="menu-size-price">—</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-spicy-cocoa-name">Какао пряный</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-spicy-cocoa-price"><span class="menu-size-price">370 ₽</span><span class="menu-size-price">—</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-grape-cocoa-name">Какао виноград NEW</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-grape-cocoa-price"><span class="menu-size-price">380 ₽</span><span class="menu-size-price">—</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-citrus-matcha-name">Матча цитрус</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-citrus-matcha-price"><span class="menu-size-price">—</span><span class="menu-size-price">470 ₽</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-sea-buckthorn-name">Чай облепиховый</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-sea-buckthorn-price"><span class="menu-size-price">—</span><span class="menu-size-price">430 ₽</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-forest-berries-name">Чай лесные ягоды</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-forest-berries-price"><span class="menu-size-price">—</span><span class="menu-size-price">430 ₽</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-strawberry-tea-name">Чай клубника — ваниль</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-strawberry-tea-price"><span class="menu-size-price">—</span><span class="menu-size-price">430 ₽</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-hibiscus-tea-name">Чай каркаде — вишня</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-hibiscus-tea-price"><span class="menu-size-price">—</span><span class="menu-size-price">410 ₽</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-mulled-juice-name">Глинтвейн б/а</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-mulled-juice-price"><span class="menu-size-price">—</span><span class="menu-size-price">450 ₽</span></span>
+                    </div>
+
+                    <div class="menu-subheading" data-edit-key="menu:text:firmennye-cold-heading">Холодные напитки</div>
+                    <div class="menu-size-heading menu-size-heading-secondary">
+                        <span></span><span></span><span>350 мл</span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-strawberry-smoothie-name">Смузи клубника — банан</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-strawberry-smoothie-price"><span class="menu-size-price">—</span><span class="menu-size-price">430 ₽</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-date-smoothie-name">Смузи протеиновый <small>финик, овсяное молоко, банан</small></span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-date-smoothie-price"><span class="menu-size-price">—</span><span class="menu-size-price">450 ₽</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-chocolate-smoothie-name">Смузи протеиновый <small>шоколад, банан, миндальный урбеч</small></span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-chocolate-smoothie-price"><span class="menu-size-price">—</span><span class="menu-size-price">450 ₽</span></span>
+                    </div>
+
+                    <div class="menu-subheading" data-edit-key="menu:text:firmennye-alcohol-heading">Алкоголь</div>
+                    <div class="menu-size-heading menu-size-heading-secondary">
+                        <span></span><span>200 мл</span><span>350 мл</span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-prosecco-name">Просекко Casa Defra</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-prosecco-price"><span class="menu-size-price">1000 ₽</span><span class="menu-size-price">—</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-bellini-name">Беллини</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-bellini-price"><span class="menu-size-price">—</span><span class="menu-size-price">650 ₽</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-red-mulled-name">Глинтвейн на красном вине</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-red-mulled-price"><span class="menu-size-price">—</span><span class="menu-size-price">690 ₽</span></span>
+                    </div>
+                    <div class="menu-item menu-size-item">
+                        <span data-edit-key="menu:text:firmennye-white-grog-name">Грог на белом вине</span>
+                        <span class="menu-price menu-size-prices" data-edit-key="menu:text:firmennye-white-grog-price"><span class="menu-size-price">—</span><span class="menu-size-price">690 ₽</span></span>
+                    </div>
+                </div>
+                <div class="menu-image-column">
+                    <figure class="menu-photo menu-signature-photo">
+                        <img src="assets/signature-drinks-instagram.jpg" alt="Два фирменных напитка Qúeue из публикации «Two girls — two vibes»" loading="eager" decoding="async" fetchpriority="low" data-edit-key="menu:image:firmennye-photo">
+                        <figcaption data-edit-key="menu:text:firmennye-caption">Фирменные напитки Qúeue</figcaption>
+                    </figure>
+                    <p class="menu-photo-source">Фото: <a href="https://www.instagram.com/queueanapa/reel/DZ9sXYsSJ-6/" target="_blank" rel="noopener noreferrer">Instagram Qúeue</a></p>
+                    <details class="original-menu">
+                        <summary>Оригинальное фото меню · фирменное</summary>
+                        <img src="assets/menu-signature-original.jpeg" alt="Оригинальное фото раздела «Фирменное» с горячими, холодными напитками и алкоголем" loading="eager" decoding="async" fetchpriority="low" data-edit-key="menu:image:firmennye-original-menu">
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-category section-wrap" id="desserts">
+            <div class="menu-category-heading">
+                <span class="category-number">03</span>
                 <div>
                     <p class="eyebrow"><span class="eyebrow-line"></span> К ЧАЮ И КОФЕ</p>
                     <h2>Десерты <em>и выпечка.</em></h2>
@@ -142,7 +260,7 @@
 
         <section class="menu-category section-wrap" id="panini">
             <div class="menu-category-heading">
-                <span class="category-number">03</span>
+                <span class="category-number">04</span>
                 <div>
                     <p class="eyebrow"><span class="eyebrow-line"></span> ПОСЫТНЕЕ</p>
                     <h2>Панини <em>и хот-дог.</em></h2>

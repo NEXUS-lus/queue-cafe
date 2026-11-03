@@ -222,7 +222,11 @@ h1 em, h2 em { color: var(--olive); font-weight: 400; }
 .menu-coffee-photo img { height: 410px; object-position: center 43%; }
 .menu-dessert-photo img { height: 400px; object-position: center 55%; }
 .menu-panini-photo img { height: 360px; object-position: center; }
+.menu-signature-photo img { height: 410px; object-position: center 52%; }
 .menu-photo figcaption { position: absolute; right: 0; bottom: 0; left: 0; padding: 31px 17px 14px; background: linear-gradient(transparent, rgba(37,34,27,.64)); color: #fffaf0; font-family: var(--serif); font-size: 18px; line-height: 1.1; }
+.menu-photo-source { margin: -7px 0 0; color: #858174; font-size: 9px; text-align: right; }
+.menu-photo-source a { color: #777158; text-decoration: underline; text-underline-offset: 2px; }
+.menu-photo-source a:hover { color: #a77c51; }
 .original-menu { border-bottom: 1px solid var(--line); color: #77766a; font-size: 9px; }
 .original-menu summary { padding: 10px 0; cursor: pointer; list-style: none; }
 .original-menu summary::-webkit-details-marker { display: none; }
@@ -327,7 +331,7 @@ h1 em, h2 em { color: var(--olive); font-weight: 400; }
     .menu-hero-row { display: block; }
     .menu-hero h1 { font-size: 68px; }
     .menu-hero-row > p { margin: 21px 0 0; }
-    .menu-jump { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; margin-top: 30px; padding: 12px 0; }
+    .menu-jump { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; margin-top: 30px; padding: 12px 0; }
     .menu-jump a { justify-content: center; gap: 5px; font-size: 8px; white-space: nowrap; }
     .menu-jump a span { font-size: 9px; }
     .menu-category { padding: 42px 0 49px; }
@@ -340,7 +344,7 @@ h1 em, h2 em { color: var(--olive); font-weight: 400; }
     .menu-price { font-size: 10px; }
     .menu-image-column { order: -1; display: flex; gap: 10px; width: 100%; }
     .menu-photo img { max-height: 270px; }
-    .menu-coffee-photo img, .menu-dessert-photo img, .menu-panini-photo img { height: clamp(210px, 68vw, 270px); }
+    .menu-coffee-photo img, .menu-dessert-photo img, .menu-panini-photo img, .menu-signature-photo img { height: clamp(210px, 68vw, 270px); }
     .menu-photo figcaption { padding: 28px 14px 12px; font-size: 16px; }
     .original-menu { font-size: 10px; }
     .menu-visit { display: block; margin-bottom: 58px; padding: 27px 20px; }
